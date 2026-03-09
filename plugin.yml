@@ -1,0 +1,44 @@
+name: PlaytimeRewardsBedrock
+version: 1.0.0
+main: icrafts\playtimerewardsbedrock\PlaytimeRewardsBedrock
+api: 5.0.0
+author: iCrafts
+description: Gives players rewards based on unused online playtime.
+
+commands:
+  getreward:
+    description: Get a reward for playtime
+    usage: "/getreward <all|amount>"
+    aliases: [gr]
+    permission: pr.getreward
+  playtime:
+    description: Show your unused playtime
+    usage: "/playtime"
+    aliases: [pt]
+    permission: pr.playtime
+  addreward:
+    description: Add a reward
+    usage: "/addreward <item> <amount> <isRandom> <isPreHardmode> <isHardmode>"
+    aliases: [ar]
+    permission: pr.addreward
+  removereward:
+    description: Remove reward(s) by item id
+    usage: "/removereward <item>"
+    aliases: [rr]
+    permission: pr.removereward
+  prhardmode:
+    description: Toggle hardmode stage for rewards
+    usage: "/prhardmode <on|off|status>"
+    permission: pr.admin
+
+permissions:
+  pr.getreward:
+    default: true
+  pr.playtime:
+    default: true
+  pr.addreward:
+    default: op
+  pr.removereward:
+    default: op
+  pr.admin:
+    default: op

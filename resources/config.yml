@@ -1,0 +1,22 @@
+﻿time_in_minutes: 30
+switch_to_hm_multiplier: 0.3
+hardmode_enabled: false
+messages:
+  prefix: "&6[PlaytimeRewards]&r "
+  playtime: "&aYou have &e{minutes}&a mins unused playtime."
+  not_enough: "&cYou have only &e{have}&c mins. Need &e{need}&c mins."
+  reward_received: "&aYou received reward(s)."
+  no_rewards_stage: "&cNo rewards configured for current stage."
+  amount_low: "&cAmount must be >= 1."
+  syntax_add: "&cUsage: /addreward <item> <amount> <isRandom> <isPreHardmode> <isHardmode>"
+  syntax_remove: "&cUsage: /removereward <item>"
+  reward_added: "&aReward added: &e{item}&a x&e{amount}&a."
+  reward_removed: "&aRemoved rewards: &e{count}&a."
+  reward_not_found: "&cNo rewards found for item &e{item}&c."
+  hardmode_set: "&aHardmode set to: &e{value}&a."
+  hardmode_status: "&aHardmode now: &e{value}&a."
+rewards:
+  - type: command
+    command: "money grant {player} 2"
+    is_pre_hardmode: true
+    is_hardmode: true
